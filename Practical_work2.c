@@ -5,10 +5,10 @@ void First() {
     int a = 0, b = 0, i = 2, res = 0, min = 0;
 
     printf("input A = ");
-    scanf("%i", &a);
+    scanf("%d", &a);
 
     printf("input B = ");
-    scanf("%i", &b);
+    scanf("%d", &b);
 
     min = (a < b) ? a : b;
     for (i; i <= min; i++) {
@@ -23,13 +23,13 @@ void First() {
 void Second() {
     int a = 0, b = 0, c = 0, res = 0, min = 0, i = 1;
     printf("input a = ");
-    scanf("%i", &a);
+    scanf("%d", &a);
 
     printf("input b = ");
-    scanf("%i", &b);
+    scanf("%d", &b);
 
     printf("input c = ");
-    scanf("%i", &c);
+    scanf("%d", &c);
 
     min = (a > b && a > c) ? a : ((b > a && b > c) ? b : c);
 
@@ -38,14 +38,14 @@ void Second() {
             res = i;
         }
     }
-    printf("NOD = %i", res);
+    printf("NOD = %d", res);
 }
 
 int main(void) {
     int n = 0;
 
     printf("Input number of Ex(1, 2): ");
-    scanf("%i", &n);
+    scanf("%d", &n);
     switch (n) {
     case 1:
         First();

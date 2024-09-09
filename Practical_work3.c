@@ -15,7 +15,7 @@ void First() {
 
     printf("Base array: \n [");
     for (int i = 0; i < N; i++) {
-        printf("%i ", array[i]);
+        printf("%d ", array[i]);
     }
     printf("]");
     for (int i = 0; i < N; i++) {
@@ -27,7 +27,7 @@ void First() {
 
     printf("\nResult array: \n [");
     for (int i = 0; i < t; i++) {
-        printf("%i ", res_array[i]);
+        printf("%d ", res_array[i]);
     }
     printf("]");
 }
@@ -44,7 +44,7 @@ void Second() {
     printf("Base matrix: \n ");
     for (int i = 0; i < m; i++) {
         for (int j = 0; j < m; j++) {
-            printf("\t%i ", A[i][j]);
+            printf("\t%d ", A[i][j]);
         }
         printf("\n");
     }
@@ -58,7 +58,7 @@ void Second() {
     printf("Result matrix: \n ");
     for (int i = 0; i < m; i++) {
         for (int j = 0; j < m; j++) {
-            printf("\t%i ", A[i][j]);
+            printf("\t%d ", A[i][j]);
         }
         printf("\n");
     }
@@ -67,10 +67,10 @@ void Second() {
 void Third() {
     int** DynMatrix, dyn_m = 0, dyn_n = 0, res_max = -99, max = -99, temp = 1;
     printf("Input m: ");
-    scanf("%i", &dyn_m);
+    scanf("%d", &dyn_m);
 
     printf("Input n: ");
-    scanf("%i", &dyn_n);
+    scanf("%d", &dyn_n);
 
     DynMatrix = (int**)malloc(dyn_m * sizeof(int*));
     
@@ -91,12 +91,12 @@ void Third() {
 
     for (int i = 0; i < dyn_m; i++) {
         for (int j = 0; j < dyn_n; j++) {
-            printf("\t%i ", DynMatrix[i][j]);
+            printf("\t%d ", DynMatrix[i][j]);
         }
         printf("\n");
     }
 
-    printf("Max = %i\n", res_max);
+    printf("Max = %d\n", res_max);
 
     //find max index
     printf("Indexes: \n");
@@ -121,7 +121,7 @@ int main(void) {
     int n = 0;
 
     printf("Input number of Ex(1, 2, 3): ");
-    scanf("%i", &n);
+    scanf("%d", &n);
     switch (n) {
     case 1:
         First();
